@@ -17,7 +17,7 @@ To start playing, follow these simple steps:
 
 1. **Clon the Directory**:
    ```bash
-   git clone https://github.com/votre-utilisateur/apple-picker.git```
+   git clone https://github.com/votre-utilisateur/apple-picker.git
 2.  **Open the Project:**
 
     - Start Unity and open the cloned folder.
