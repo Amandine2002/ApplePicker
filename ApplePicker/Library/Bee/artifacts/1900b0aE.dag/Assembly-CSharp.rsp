@@ -359,6 +359,7 @@
 "Assets/Files/Basket.cs"
 "Assets/Files/GameOverMenu.cs"
 "Assets/Files/HighScore.cs"
+"Assets/Files/RoundManager.cs"
 "Assets/Files/ScoreCounter.cs"
 "Assets/Files/StartMenu.cs"
 -langversion:9.0

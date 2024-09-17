@@ -6,12 +6,12 @@ using UnityEngine.SceneManagement;
 public class ApplePicker : MonoBehaviour{
     [Header("Inscribed")]
     public GameObject   basketPrefab;
-    public int          numBaskets = 3;
+    public int          numBaskets = 4;
     public float        basketBottomY = -14f;   
     public float        basketSpacingY = 2f;
     public List<GameObject> basketList;
     private ScoreCounter scoreCounter; // Référence au ScoreCounter
-
+    private RoundManager roundManager; // Référence au RoundManager
 
     void Start() {
         basketList = new List<GameObject>();
@@ -28,13 +28,16 @@ public class ApplePicker : MonoBehaviour{
         if (scoreGO != null) {
             scoreCounter = scoreGO.GetComponent<ScoreCounter>();
         }
+
+        // Trouver et initialiser RoundManager
+        roundManager = FindObjectOfType<RoundManager>();
     }
 
     public void AppleMissed() {
         // Destroy all of the falling Apples
         GameObject[] appleArray=GameObject.FindGameObjectsWithTag("Apple");
-        foreach ( GameObject tempGO in appleArray ) {
-            Destroy( tempGO );
+        foreach (GameObject tempGO in appleArray) {
+            Destroy(tempGO);
         }
 
         // Destroy one of the Baskets
@@ -43,21 +46,22 @@ public class ApplePicker : MonoBehaviour{
         // Get a reference to that Basket GameObject
         GameObject basketGO = basketList[basketIndex];
         // Remove the Basket from the list and destroy the GameObject
-        basketList.RemoveAt( basketIndex );
-        Destroy( basketGO );
+        basketList.RemoveAt(basketIndex);
+        Destroy(basketGO);
 
-        // Store the final score if scoreCounter is not null
+        // Si le RoundManager existe, passer au round suivant
+        if (roundManager != null) {
+            roundManager.NextRound(); // Passer au round suivant
+        }
+
+        // Sauvegarder le score final si ScoreCounter n'est pas nul
         if (scoreCounter != null) {
             PlayerPrefs.SetInt("FinalScore", scoreCounter.score);
         }
 
-        // If there are no Baskets left, restart the game
-        if ( basketList.Count == 0 ) {
+        // Si tous les paniers sont perdus, charger l'écran de Game Over
+        if (basketList.Count == 0) {
             SceneManager.LoadScene("GameOverMenu");
         }
-    }
-    // Update is called once per frame
-    void Update() {
-        
     }
 }
