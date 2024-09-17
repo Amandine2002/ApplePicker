@@ -75,10 +75,12 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   applePrefab: {fileID: 739100419676722188, guid: c5eb87dd10412c44b9f88213a2aaf9ce, type: 3}
+  rottenapplePrefab: {fileID: 7878804690281883015, guid: 2f6d24593a8771e6993140399e42e168, type: 3}
   speed: 10
   leftAndRightEdge: 24
   changeDirChance: 0.02
   appelDropDelay: 0.5
+  rottenappelDropDelay: 0.1
 --- !u!1 &4615227122899044502
 GameObject:
   m_ObjectHideFlags: 0

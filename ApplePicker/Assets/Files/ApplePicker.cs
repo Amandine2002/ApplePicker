@@ -8,7 +8,7 @@ public class ApplePicker : MonoBehaviour{
     public GameObject   basketPrefab;
     public int          numBaskets = 4;
     public float        basketBottomY = -14f;   
-    public float        basketSpacingY = 2f;
+    public float        basketSpacingY = 1.5f;
     public List<GameObject> basketList;
     private ScoreCounter scoreCounter; // Référence au ScoreCounter
     private RoundManager roundManager; // Référence au RoundManager
