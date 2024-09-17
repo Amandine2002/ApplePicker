@@ -4,12 +4,13 @@
 ## 📜 **Project Summary**
 
 Welcome to **Apple Picker** ! <br>
-This fun game puts you in the shoes of a character trying to pick up falling apples from baskets. The aim of the game is simple: catch as many apples as you can before the baskets empty.
+This fun game puts you in the shoes of a character trying to pick up falling apples from baskets. The aim of the game is simple: catch as many apples as you can (avoiding rotten ones).
 
 **Apple Picker** features:
 - **Captivating gameplay**: Catch the apples by moving the baskets with your mouse.
 - **A dynamic scoring system**: Each apple caught increases your score, while each apple missed reduces the number of baskets available.
 - **An end-of-game screen**: Display your final score and try to beat your best score!
+- **Round System**: The game progresses through 4 rounds, with a new round starting as you lose a basket.
 
 ## 🚀 **Start**
 
