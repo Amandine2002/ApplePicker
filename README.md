@@ -27,8 +27,7 @@ This fun game puts you in the shoes of a character trying to pick up falling app
 
 ************************************************************************
 
-
-# 🎯 **Project 2: Mission Demolition **🏰
+# 🎯 **Project 2: Mission Demolition** 🏰
 ## 📜 **Project Summary**
 Welcome to **Mission Demolition!** <br>
 In this exciting game, you take on the role of a slingshot-wielding character tasked with demolishing wooden castles. The goal is to land one of the projectiles in the white zone with as limited number of shots.When the area turns red, you've succeeded and move on to the next level.
