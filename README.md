@@ -1,4 +1,4 @@
-            # 🎯 **Project 1: Apple Picker** 🍏
+# 🎯 **Project 1: Apple Picker** 🍏
 
 ## 📜 **Project Summary**
 
@@ -26,7 +26,6 @@ bash
 2.  **Play the Game:**
 
     - Click ``Play`` in Unity to start playing.
-
 
 ## 🛠️ **Features**
 - **Basket management** : Baskets are destroyed one by one when an apple is missed.
